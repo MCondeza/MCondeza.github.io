@@ -60,6 +60,12 @@ section{
   text-align:center;
 }
 
+#Sobre_mi{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+}
+
 #Proyectos{
   display: grid;
   grid-template-columns: auto auto auto;
