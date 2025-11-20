@@ -96,41 +96,40 @@ section{
   border-radius: 10px;     
 }
 
-#contacto{
-  h1, p{ 
+#contacto> h1, p{ 
   text-align:center;
 }
-div{
+#contacto>div{
   color:#FFFFFF;
   background-color:#112A4A;
   padding:30px;
 }
-label{
+#contacto>label{
   display:flex;
   flex-direction:column;
   margin-top:10px;
 }
-input, select, textarea{
+#contacto>input, select, textarea{
   margin-top:10px;
 }
 
-input[type="radio"], label[name="radio"]{
+#contacto>input[type="radio"], label[name="radio"]{
   display:inline-block;
   margin:5px;
 }
 
-input[value="check"], label[name="check"]{
+#contacto>input[value="check"], label[name="check"]{
   display:inline-block;
   margin:5px;
 }
-button{
+#contacto>button{
   width:100%;
   margin:30px;
   margin-left:auto;
   background-color:#2e8b57;
   color:#FFFFFF;
 }
-}
+
 
 
 @media (max-width: 480px){
