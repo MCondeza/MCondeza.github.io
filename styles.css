@@ -6,7 +6,7 @@
 
 #cabecera{
   font-size:18px;
-  background-color: #3498db;
+  background-color:#2C4A7A;
   width:100%;
   height:30%;
   margin:0;
@@ -35,8 +35,7 @@ p {
   justify-content: flex-end;
   width:100%;
   height: 70px;
-  align-items:center;
-  
+  align-items:center;  
   position:fixed;
   z-index: 1000
 }
