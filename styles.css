@@ -67,7 +67,7 @@ section{
   padding:30px;
 }
 
-.Grid_proyectos {
+.Grid_proyectos{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
