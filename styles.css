@@ -96,9 +96,91 @@ section{
   border-radius: 10px;     
 }
 
-#Contacto{
-  display:flex;
-  flex-direction:column;
+#Contacto {
+  padding: 40px 20px;
+  background-color: #f6f9fc;   /* fondo suave */
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+/* Título */
+#Contacto h2 {
+  text-align: center;
+  color: #176B87;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* FORMULARIO */
+#survey-form {
+  max-width: 600px;
+  margin: 0 auto;                 /* lo centra */
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12); /* sombra elegante */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Etiquetas */
+#survey-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #0A4D68;
+  font-size: 16px;
+}
+
+/* Inputs y textarea */
+#survey-form input,
+#survey-form select,
+#survey-form textarea {
+  margin-top: 8px;
+  padding: 12px;
+  border: 1px solid #bcd0d6;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #ffffff;
+}
+
+/* Estilo al seleccionar */
+#survey-form input:focus,
+#survey-form select:focus,
+#survey-form textarea:focus {
+  outline: none;
+  border-color: #176B87;
+  box-shadow: 0 0 5px rgba(23,107,135,0.4);
+}
+
+/* Botón */
+#survey-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #176B87;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#survey-form button:hover {
+  background-color: #0A4D68;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+  #survey-form {
+    padding: 20px;
+  }
+
+  #Contacto h2 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px){
