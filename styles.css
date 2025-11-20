@@ -173,18 +173,26 @@ section{
 }
 
 /* RESPONSIVE */
-@media (max-width: 480px) {
+/* Ajustes para pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
   #survey-form {
+    width: 100%;
     padding: 20px;
   }
 
   #Contacto h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+
+  #survey-form input,
+  #survey-form select,
+  #survey-form textarea {
+    font-size: 14px;
+  }
+
+  #survey-form button {
+    font-size: 16px;
+    padding: 14px;
   }
 }
 
-@media (max-width: 480px){
-  #cabecera{font-size:13px;}
-  #welcome-section{
-  font-size:30px;}
-}
