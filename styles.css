@@ -72,11 +72,6 @@ section{
   grid-template-columns: repeat(3, 1fr);
 }
 
-#Proyectos > div{
-  display: grid;
-  grid-auto-columns: auto ;
-}
-
 @media (max-width: 480px){
   #cabecera{font-size:13px;}
   #welcome-section{
