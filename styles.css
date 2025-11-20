@@ -174,25 +174,55 @@ section{
 
 /* RESPONSIVE */
 /* Ajustes para pantallas pequeñas (celulares) */
-@media (max-width: 600px) {
-  #survey-form {
+/* --- Estilos para pantallas grandes --- */
+/* Aquí dejas tus tamaños normales */
+
+/* --- Responsive para celulares --- */
+@media (max-width: 768px) {
+
+  /* Ajusta títulos */
+  h1 {
+    font-size: 2.5rem;     /* antes seguro lo tenías en 6rem o más */
+    line-height: 1.2;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* Ajusta párrafos */
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Secciones */
+  section {
+    padding: 20px 10px;
+  }
+
+  /* Imagenes */
+  img {
     width: 100%;
-    padding: 20px;
+    height: auto;
   }
 
-  #Contacto h2 {
-    font-size: 22px;
+  /* Nav responsive */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  #survey-form input,
-  #survey-form select,
-  #survey-form textarea {
-    font-size: 14px;
+  /* Ajuste del bloque principal (el Hola, Bienvenido...) */
+  .hero {
+    padding: 40px 10px;
+    text-align: center;
   }
 
-  #survey-form button {
-    font-size: 16px;
-    padding: 14px;
-  }
 }
+
 
