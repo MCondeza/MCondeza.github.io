@@ -61,6 +61,19 @@ a:hover {
 section{
 color: #2d89c6;
   width: 100%;
-  height: calc(100vh - 30px);
-  
+  height: calc(100vh - 30px);  
+}
+
+#Bienvenida{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  font-size:50px;
+  text-align:center;
+}
+
+@media (max-width: 480px){
+  #cabecera{font-size:13px;}
+  #welcome-section{
+  font-size:30px;}
 }
