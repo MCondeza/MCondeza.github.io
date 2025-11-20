@@ -96,31 +96,10 @@ section{
   border-radius: 10px;     
 }
 
-#contacto{
+#Contacto{
   display:flex;
   flex-direction:column;
 }
-
-#Contacto>div{
-  color:#FFFFFF;
-  background-color:#112A4A;
-  padding:30px;
-}
-#Contacto>label{
-  display:flex;
-  flex-direction:column;
-  margin-top:10px;
-}
-
-#Contacto>button{
-  width:100%;
-  margin:30px;
-  margin-left:auto;
-  background-color:#2e8b57;
-  color:#FFFFFF;
-}
-
-
 
 @media (max-width: 480px){
   #cabecera{font-size:13px;}
