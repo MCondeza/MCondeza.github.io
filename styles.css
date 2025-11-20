@@ -1,6 +1,5 @@
 body {
-  font-family:Lato;
-  /*font-family: Arial, sans-serif;*/
+  font-family: Lato;
   background-color: #f8f8f8;
   margin: 0;
   padding: 20px;
@@ -17,60 +16,73 @@ p {
   color: #555;
 }
 
-#navbar{
-  display:flex;
+/* ---------------- NAVBAR ---------------- */
+
+#navbar {
+  display: flex;
   justify-content: flex-end;
-  width:100%;
+  width: 100%;
   height: 70px;
-  align-items:center;  
-  position:fixed;
-  z-index: 1000
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background:#fff;
+  z-index: 1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.06);
+  padding-right: 10px;
 }
-#navbar>ul{
-   display:flex;
-   text-align: right;   
-   list-style:none;
+
+#navbar > ul {
+  display: flex;
+  list-style: none;
 }
-#navbar a{
-  display:flex;
-  align-items:center;
+
+#navbar a {
+  display: flex;
+  align-items: center;
   height: 70px;
-  padding:0 30px;
+  padding: 0 20px;
 }
-a{
-  text-decoration:none;
-  color:#555;
+
+a {
+  text-decoration: none;
+  color: #555;
 }
+
 a:hover {
   background-color: #A7C6ED;
-  color:white;
+  color: white;
 }
-section{
-  padding:20px;
+
+/* ---------------- SECCIONES ---------------- */
+
+section {
+  padding: 20px;
   color: #2d89c6;
   width: 100%;
-  height: calc(100vh - 30px);  
+  min-height: calc(100vh - 70px);
+  padding-top: 100px; /* para que no se esconda por el navbar */
 }
 
-#Inicio{
-  display:grid;
-  justify-content:center;
-  align-items:center;
-  font-size:50px;
-  text-align:center;
+#Inicio {
+  display: grid;
+  place-items: center;
+  font-size: 50px;
+  text-align: center;
 }
 
-#Sobre_mi{
-  display:grid;
-  justify-content:center;
-  align-items:center;
-  padding:30px;
+#Sobre_mi {
+  display: grid;
+  place-items: center;
+  padding: 30px;
 }
+
+/* ---------------- PROYECTOS ---------------- */
 
 #Proyectos h2 {
   font-size: 28px;
   margin-bottom: 25px;
-  color: #176B87; 
+  color: #176B87;
   text-align: left;
   padding: 20px;
 }
@@ -78,9 +90,9 @@ section{
 .Grid_proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;                              
-  padding:20px;                      
-  justify-items: center;                  
+  gap: 40px;
+  padding: 20px;
+  justify-items: center;
 }
 
 .project {
@@ -92,18 +104,19 @@ section{
 .project img {
   width: 300px;
   height: 200px;
-  object-fit: cover;       
-  border-radius: 10px;     
+  object-fit: cover;
+  border-radius: 10px;
 }
+
+/* ---------------- CONTACTO ---------------- */
 
 #Contacto {
   padding: 40px 20px;
-  background-color: #f6f9fc;   /* fondo suave */
+  background-color: #f6f9fc;
   border-radius: 10px;
   margin-top: 60px;
 }
 
-/* Título */
 #Contacto h2 {
   text-align: center;
   color: #176B87;
@@ -111,20 +124,18 @@ section{
   font-size: 28px;
 }
 
-/* FORMULARIO */
 #survey-form {
   max-width: 600px;
-  margin: 0 auto;                 /* lo centra */
+  margin: 0 auto;
   background: white;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.12); /* sombra elegante */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Etiquetas */
 #survey-form label {
   display: flex;
   flex-direction: column;
@@ -133,7 +144,6 @@ section{
   font-size: 16px;
 }
 
-/* Inputs y textarea */
 #survey-form input,
 #survey-form select,
 #survey-form textarea {
@@ -146,7 +156,6 @@ section{
   background: #ffffff;
 }
 
-/* Estilo al seleccionar */
 #survey-form input:focus,
 #survey-form select:focus,
 #survey-form textarea:focus {
@@ -155,7 +164,6 @@ section{
   box-shadow: 0 0 5px rgba(23,107,135,0.4);
 }
 
-/* Botón */
 #survey-form button {
   padding: 12px;
   border: none;
@@ -172,57 +180,60 @@ section{
   background-color: #0A4D68;
 }
 
-/* RESPONSIVE */
-/* Ajustes para pantallas pequeñas (celulares) */
-/* --- Estilos para pantallas grandes --- */
-/* Aquí dejas tus tamaños normales */
+/* ---------------- RESPONSIVE MOBILE ---------------- */
 
-/* --- Responsive para celulares --- */
 @media (max-width: 768px) {
 
-  /* Ajusta títulos */
+  /* Títulos */
   h1 {
-    font-size: 2.5rem;     /* antes seguro lo tenías en 6rem o más */
-    line-height: 1.2;
-    text-align: center;
-    margin: 20px 0;
+    font-size: 2rem;
+    padding: 0 10px;
   }
 
   h2 {
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 1.5rem;
   }
 
-  /* Ajusta párrafos */
-  p {
-    font-size: 1rem;
+  /* Navbar */
+  #navbar {
+    justify-content: center;
+    height: 60px;
+  }
+
+  #navbar ul {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  #navbar a {
     padding: 0 10px;
-    text-align: center;
+    font-size: 14px;
   }
 
   /* Secciones */
   section {
     padding: 20px 10px;
+    padding-top: 80px;
   }
 
-  /* Imagenes */
-  img {
-    width: 100%;
+  /* Proyectos */
+  .Grid_proyectos {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .project img {
+    width: 90%;
     height: auto;
   }
 
-  /* Nav responsive */
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
+  /* Sobre mí y inicio */
+  #Inicio {
+    font-size: 28px;
+    padding: 10px;
   }
 
-  /* Ajuste del bloque principal (el Hola, Bienvenido...) */
-  .hero {
-    padding: 40px 10px;
-    text-align: center;
+  #Sobre_mi {
+    padding: 10px;
   }
-
 }
-
-
