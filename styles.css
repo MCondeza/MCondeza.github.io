@@ -70,17 +70,17 @@ section{
 #Proyectos h2 {
   font-size: 28px;
   margin-bottom: 25px;
-  color: #176B87;   /* Azul elegante que transmite confianza */
+  color: #176B87; 
   text-align: left;
   padding: 20px;
 }
 
 .Grid_proyectos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 40px;                              /* separación entre cards */
-  padding: 0 20px;                         /* margenes laterales */
-  justify-items: center;                   /* centra cada item */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;                              
+  padding:20px;                      
+  justify-items: center;                  
 }
 
 .project {
@@ -89,14 +89,49 @@ section{
   align-items: center;
 }
 
-/* Imágenes de proyecto */
 .project img {
   width: 300px;
   height: 200px;
-  object-fit: cover;       /* evita deformación */
-  border-radius: 10px;     /* esquinas suaves */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);  /* sombra elegante */
+  object-fit: cover;       
+  border-radius: 10px;     
 }
+
+#contacto{
+  h1, p{ 
+  text-align:center;
+}
+div{
+  color:#FFFFFF;
+  background-color:#112A4A;
+  padding:30px;
+}
+label{
+  display:flex;
+  flex-direction:column;
+  margin-top:10px;
+}
+input, select, textarea{
+  margin-top:10px;
+}
+
+input[type="radio"], label[name="radio"]{
+  display:inline-block;
+  margin:5px;
+}
+
+input[value="check"], label[name="check"]{
+  display:inline-block;
+  margin:5px;
+}
+button{
+  width:100%;
+  margin:30px;
+  margin-left:auto;
+  background-color:#2e8b57;
+  color:#FFFFFF;
+}
+}
+
 
 @media (max-width: 480px){
   #cabecera{font-size:13px;}
