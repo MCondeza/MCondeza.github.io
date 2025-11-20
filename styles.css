@@ -67,15 +67,27 @@ section{
   padding:30px;
 }
 
-.Grid_proyectos{
+.Grid_proyectos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  padding: 0 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 40px;                              /* separación entre cards */
+  padding: 0 20px;                         /* margenes laterales */
+  justify-items: center;                   /* centra cada item */
 }
-.project{
-  display: grid;
-  grid-template-columns: auto;
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imágenes de proyecto */
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;       /* evita deformación */
+  border-radius: 10px;     /* esquinas suaves */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);  /* sombra elegante */
 }
 
 @media (max-width: 480px){
