@@ -67,13 +67,13 @@ section{
   padding:30px;
 }
 
-#Grid_proyectos{
+.Grid_proyectos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-#Grid_proyectos>div{
-  display: grid;
-  grid-template-columns: auto;
+  gap: 40px;
+  align-items: center;
+  justify-items: center;
+  margin-top: 30px;
 }
 
 @media (max-width: 480px){
