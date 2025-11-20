@@ -46,6 +46,7 @@ a:hover {
   color:white;
 }
 section{
+  padding:20px;
   color: #2d89c6;
   width: 100%;
   height: calc(100vh - 30px);  
@@ -57,6 +58,11 @@ section{
   align-items:center;
   font-size:50px;
   text-align:center;
+}
+
+#Proyectos{
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 @media (max-width: 480px){
