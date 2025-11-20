@@ -64,11 +64,12 @@ section{
   display:grid;
   justify-content:center;
   align-items:center;
+  padding:30px;
 }
 
 #Proyectos{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-auto-columns: auto auto auto;
 }
 
 @media (max-width: 480px){
