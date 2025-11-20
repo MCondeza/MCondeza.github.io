@@ -71,6 +71,10 @@ section{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+#Grid_proyectos>div{
+  display: grid;
+  grid-template-columns: auto;
+}
 
 @media (max-width: 480px){
   #cabecera{font-size:13px;}
