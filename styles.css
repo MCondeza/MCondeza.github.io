@@ -1,11 +1,6 @@
-*{
-  font-family:Lato;
-  margin:0;
-  padding:0;
-}
-
 body {
-  font-family: Arial, sans-serif;
+  font-family:Lato;
+  /*font-family: Arial, sans-serif;*/
   background-color: #f8f8f8;
   margin: 0;
   padding: 20px;
@@ -47,7 +42,7 @@ a{
   color:#555;
 }
 a:hover {
- /* background-color: #A7C6ED;*/
+  background-color: white;
   color:white;
 }
 section{
