@@ -67,9 +67,9 @@ section{
   padding:30px;
 }
 
-#Grid_proyectos {
-  display: flex;
- justify-content: space-between;
+.Grid_proyectos {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 .project{
   display: grid;
