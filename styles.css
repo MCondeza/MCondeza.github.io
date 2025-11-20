@@ -96,18 +96,23 @@ section{
   border-radius: 10px;     
 }
 
-#contacto>div{
+#contacto{
+  display:flex;
+  flex-direction:column;
+}
+
+#Contacto>div{
   color:#FFFFFF;
   background-color:#112A4A;
   padding:30px;
 }
-#contacto>label{
+#Contacto>label{
   display:flex;
   flex-direction:column;
   margin-top:10px;
 }
 
-#contacto>button{
+#Contacto>button{
   width:100%;
   margin:30px;
   margin-left:auto;
