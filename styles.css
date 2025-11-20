@@ -4,7 +4,6 @@
   padding:0;
 }
 
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f8f8;
@@ -45,13 +44,13 @@ p {
 }
 a{
   text-decoration:none;
-  color:white;
+  color:#2d89c6;
 }
 a:hover {
   background-color: #2d89c6;
 }
 section{
-color: #2d89c6;
+  color: #2d89c6;
   width: 100%;
   height: calc(100vh - 30px);  
 }
