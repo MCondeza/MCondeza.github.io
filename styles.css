@@ -51,7 +51,7 @@ section{
   height: calc(100vh - 30px);  
 }
 
-#Bienvenida{
+#Inicio{
   display:grid;
   justify-content:center;
   align-items:center;
