@@ -68,8 +68,8 @@ section{
 }
 
 .Grid_proyectos {
-  display: grid;
-  grid-template-columns: auto auto auto;
+ display: grid;
+  grid-template-columns: 30px 200px auto 100px;
 }
 .project{
   display: grid;
