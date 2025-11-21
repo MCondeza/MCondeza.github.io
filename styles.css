@@ -62,6 +62,7 @@ section {
   place-items: center;
   padding: 30px;
   width: 100%;
+  scroll-margin-top: 90px;
   /*padding: 40px;
   color: #2d89c6;
   width: 100%;
@@ -80,6 +81,10 @@ section {
   display: grid;
   place-items: center;
   padding: 30px;
+}
+#Sobre_mi p {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* ---------------- PROYECTOS ---------------- */
